@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Management System - Login</title>
+    
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Management System - Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
     <style>
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -99,6 +103,8 @@
         .auth-header {
             margin-bottom: 30px;
         }
+
+
         
         .logo {
             width: 80px;
@@ -106,6 +112,8 @@
             margin-bottom: 15px;
             filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
         }
+
+
         
         .auth-header h1 {
             color: #2c3e50;
@@ -146,9 +154,12 @@
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
             outline: none;
         }
+
+
         
         .auth-btn {
             width: 100%;
+            widht:100%;
             padding: 15px;
             background-color: #3498db;
             color: white;
@@ -287,12 +298,10 @@
     </style>
 </head>
 <body>
-    <!-- Animated background elements -->
+
     <div class="traffic-elements">
         <div></div>
     </div>
-
-    <!-- Login Container -->
     <div id="loginContainer" class="auth-container">
         <div class="auth-box">
             <div class="auth-header">
@@ -301,8 +310,8 @@
                 <p>Smart solutions for urban mobility</p>
             </div>
             
-            <form id="loginForm">
-                <div class="form-group">
+  <form id="loginForm">
+       <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required placeholder="Enter your username">
                 </div>
@@ -320,38 +329,33 @@
                     <a id="forgotPasswordLink"><i class="fas fa-key"></i> Forgot Password?</a>
                     <span>|</span>
                     <a id="createAccountLink"><i class="fas fa-user-plus"></i> Create Account</a>
-                </div>
-            </form>
-        </div>
+     </div>
+   </form>
+ </div>
     </div>
-
-    <!-- Forgot Password Container -->
     <div id="forgotPasswordContainer" class="auth-container hidden">
-        <div class="auth-box">
-            <div class="auth-header">
-                <img src="images/traffic-logo.png" alt="Traffic System Logo" class="logo">
-                <h1>Reset Your Password</h1>
-                <p>Enter your email to receive a reset link</p>
+<div class="auth-box">
+     <div class="auth-header">
+     <img src="images/traffic-logo.png" alt="Traffic System Logo" class="logo">
+     <h1>Reset Your Password</h1>
+     <p>Enter your email to receive a reset link</p>
             </div>
-            
-            <form id="forgotPasswordForm">
-                <div class="form-group">
-                    <label for="resetEmail">Email Address</label>
-                    <input type="email" id="resetEmail" name="email" required placeholder="Enter your registered email">
-                </div>
+      <form id="forgotPasswordForm">
+      <div class="form-group">
+          <label for="resetEmail">Email Address</label>
+           <input type="email" id="resetEmail" name="email" required placeholder="Enter your registered email">
+      </div>
                 
-                <button type="submit" class="auth-btn">
-                    <i class="fas fa-paper-plane"></i> Send Reset Link
-                </button>
+           <button type="submit" class="auth-btn">
+          <i class="fas fa-paper-plane"></i> Send Reset Link
+           </button>
                 
-                <div class="auth-footer">
+        <div class="auth-footer">
                     <a id="backToLoginFromForgot"><i class="fas fa-arrow-left"></i> Back to Login</a>
-                </div>
-            </form>
-        </div>
+         </div>
+       </form>
+  </div>
     </div>
-
-    <!-- Create Account Container -->
     <div id="createAccountContainer" class="auth-container hidden">
         <div class="auth-box">
             <div class="auth-header">
@@ -366,36 +370,34 @@
                     <input type="text" id="newUsername" name="username" required placeholder="Choose a username">
                 </div>
                 
-                <div class="form-group">
-                    <label for="newEmail">Email Address</label>
-                    <input type="email" id="newEmail" name="email" required placeholder="Enter your email">
-                </div>
+         <div class="form-group">
+              <label for="newEmail">Email Address</label>
+               <input type="email" id="newEmail" name="email" required placeholder="Enter your email">
+      </div>
                 
-                <div class="form-group">
-                    <label for="newPassword">Password</label>
-                    <input type="password" id="newPassword" name="password" required placeholder="Create a password">
-                    <div class="password-strength">
+          <div class="form-group">
+          <label for="newPassword">Password</label>
+              <input type="password" id="newPassword" name="password" required placeholder="Create a password">
+          <div class="password-strength">
                         <div id="passwordStrength" class="strength-meter"></div>
                     </div>
                 </div>
                 
-                <div class="form-group">
+         <div class="form-group">
                     <label for="confirmPassword">Confirm Password</label>
                     <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
-                </div>
-                
-                <button type="submit" class="auth-btn">
-                    <i class="fas fa-user-plus"></i> Create Account
-                </button>
-                
-                <div class="auth-footer">
-                    <a id="backToLoginFromCreate"><i class="fas fa-arrow-left"></i> Back to Login</a>
-                </div>
-            </form>
         </div>
+                
+          <button type="submit" class="auth-btn">
+                    <i class="fas fa-user-plus"></i> Create Account
+         </button>
+                
+         <div class="auth-footer">
+         <a id="backToLoginFromCreate"><i class="fas fa-arrow-left"></i> Back to Login</a>
     </div>
-
-    <!-- Success Message -->
+</form>
+   </div>
+    </div>
     <div id="successMessage" class="success-message hidden">
         <div class="message-box">
             <i class="fas fa-check-circle" style="font-size: 50px; color: #2ecc71; margin-bottom: 15px;"></i>
@@ -406,40 +408,31 @@
         </div>
     </div>
 
-    <script>// Replace your existing login script with this updated version
+    <script>
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value.trim();
     const loginBtn = document.querySelector('#loginForm .auth-btn');
-    
-    // 1. Input Validation
+
     if (!username || !password) {
         showToast('Please enter both username and password', 'error');
         return;
     }
-    
-    // 2. Attempt Limit Check
     if (failedAttempts >= MAX_ATTEMPTS) {
         showToast(`Account locked. Try again in 30 seconds`, 'error');
         loginBtn.disabled = true;
-        
-        // Reset after 30 seconds
         setTimeout(() => {
-            failedAttempts = 0;
-            loginBtn.disabled = false;
-            showToast('You may now try again', 'success');
+     failedAttempts = 0;
+     loginBtn.disabled = false;
+showToast('You may now try again', 'success');
         }, 30000);
         return;
     }
-    
-    // 3. Credential Validation (Only accepts GDRUEWR1#$@1)
     if (password !== "GDRUEWR1#$@1") {
         failedAttempts++;
         const remaining = MAX_ATTEMPTS - failedAttempts;
-        
-        // Visual feedback
         document.querySelector('.auth-box').classList.add('shake');
         setTimeout(() => {
             document.querySelector('.auth-box').classList.remove('shake');
@@ -448,20 +441,13 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         showToast(`Invalid password. ${remaining} attempt${remaining !== 1 ? 's' : ''} left`, 'error');
         return;
     }
-    
-    // 4. Successful Login Flow
     loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authenticating...';
     loginBtn.disabled = true;
-    
-    // Simulate API call
     setTimeout(() => {
-        // Hide login, show success
         loginContainer.classList.add('hidden');
         document.getElementById('successTitle').textContent = 'Access Granted';
         document.getElementById('successMessageText').textContent = 'Welcome to Traffic Control Dashboard';
         successMessage.classList.remove('hidden');
-        
-        // Redirect to dashboard after 3 seconds
         setTimeout(() => {
             window.location.href = 'dashboard.html';
         }, 3000);
@@ -469,7 +455,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     }, 1500);
 });
 
-// Ensure these variables exist at the top of your script:
 let failedAttempts = 0;
 const MAX_ATTEMPTS = 3;
     </script>
