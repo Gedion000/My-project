@@ -6,7 +6,7 @@
     <title>Traffic Control Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Base Styles */
+
         * {
             margin: 0;
             padding: 0;
@@ -24,7 +24,7 @@
             min-height: 100vh;
         }
         
-        /* Sidebar Styles */
+     
         .sidebar {
             width: 250px;
             background-color: #2c3e50;
@@ -125,7 +125,7 @@
             object-fit: cover;
         }
         
-        /* Widget Styles */
+
         .widget-row {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -174,7 +174,7 @@
             color: #e74c3c;
         }
         
-        /* Traffic Map Styles */
+ 
         .traffic-map {
             background-color: white;
             border-radius: 8px;
@@ -216,7 +216,7 @@
             object-fit: cover;
         }
         
-        /* Signal Control Styles */
+     
         .signal-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -307,7 +307,7 @@
             margin-top: 10px;
         }
         
-        /* Section Header Styles */
+
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -421,8 +421,7 @@
         }
 
         
-        
-        /* Incident Report */
+  
         .incident-report {
             background: white;
             padding: 20px;
@@ -462,8 +461,7 @@
             justify-content: center;
             gap: 5px;
         }
-        
-        /* Analytics Filters */
+   
         .analytics-filters {
             background: white;
             padding: 20px;
@@ -510,7 +508,7 @@
             margin-top: 15px;
         }
         
-        /* Toast Notifications */
+
         .toast {
             position: fixed;
             bottom: 20px;
@@ -536,7 +534,7 @@
             gap: 10px;
         }
         
-        /* Responsive Adjustments */
+    
         @media (max-width: 768px) {
             .dashboard-container {
                 flex-direction: column;
@@ -559,7 +557,7 @@
             }
         }
 
-        /* Analysis Dashboard Styles */
+    
 .analysis-dashboard {
     margin-top: 30px;
     display: flex;
@@ -684,7 +682,6 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="sidebar-header">
                 <img src="images/traffic-logo.png" class="logo">
@@ -737,10 +734,8 @@
 
             </div>
         </aside>
-
-        <!-- Main Content Area -->
         <main class="main-content">
-            <!-- Dashboard Header -->
+  
             <header class="content-header">
                 <h1 id="pageTitle">Dashboard Overview</h1>
                 <div class="user-profile">
@@ -749,9 +744,9 @@
                 </div>
             </header>
 
-            <!-- Dashboard Content -->
+         
             <div class="content-section" id="dashboardContent">
-                <!-- Dashboard Widgets -->
+   
                 <div class="widget-row">
                     <div class="widget">
                         <div class="widget-header">
@@ -793,7 +788,6 @@
                     </div>
                 </div>
 
-                <!-- Traffic Map -->
                 <div class="traffic-map">
                     <div class="map-header">
                         <h2><i class="fas fa-map-marked-alt"></i> Live Traffic Map</h2>
@@ -810,7 +804,7 @@
                     
                 </div>
 
-                <!-- Live Traffic Alerts Section -->
+            
                 <div class="alerts-section">
                     <h2><i class="fas fa-bell"></i> Live Traffic Alerts</h2>
                     <div class="alert-list">
@@ -831,7 +825,6 @@
                 </div>
             </div>
 
-            <!-- Signal Control Content -->
             <div class="content-section" id="signalControlContent" style="display:none">
                 <div class="section-header">
                     <h2><i class="fas fa-traffic-light"></i> Traffic Signal Control</h2>
@@ -846,7 +839,7 @@
                 </div>
                 
                 <div class="signal-grid">
-                    <!-- Intersection 1 -->
+          
                     <div class="signal-card">
                         <h3>Main St & 1st Ave</h3>
                         <div class="signal-status">
@@ -872,7 +865,7 @@
                         </div>
                     </div>
                     
-                    <!-- Intersection 2 -->
+                 
                     <div class="signal-card">
                         <h3>2nd St & Broadway</h3>
                         <div class="signal-status">
@@ -899,7 +892,6 @@
                     </div>
                 </div>
 
-                <!-- Emergency Vehicle Priority Section -->
                 <div class="priority-control">
                     <h2><i class="fas fa-ambulance"></i> Emergency Vehicle Priority</h2>
                     <div class="priority-options">
@@ -917,7 +909,6 @@
                 </div>
             </div>
 
-            <!-- Incidents Content -->
             <div class="content-section" id="incidentsContent" style="display:none">
                 <div class="section-header">
                     <h2><i class="fas fa-car-crash"></i> Traffic Incidents</h2>
@@ -926,7 +917,7 @@
                     </button>
                 </div>
                 
-                <!-- Incident Report Section -->
+     
                 <div class="incident-report">
                     <h2><i class="fas fa-edit"></i> Report New Incident</h2>
                     <form class="incident-form">
@@ -945,7 +936,7 @@
                 </div>
             </div>
 
-            <!-- Analytics Content -->
+        
             <div class="content-section" id="analyticsContent" style="display:none">
                 <div class="section-header">
                     <h2><i class="fas fa-chart-line"></i> Traffic Analytics</h2>
@@ -955,10 +946,6 @@
 
                   
                 </div>
-                
-                <!-- Analytics Filters Section -->
-                
-                  
                         <div class="analytics-filters">
                             <h2><i class="fas fa-filter"></i> Data Filters</h2>
                             <div class="filter-options">
@@ -984,7 +971,7 @@
                             </div>
                         </div>
                         <div class="analysis-dashboard">
-                            <!-- Row 1: Key Metrics -->
+                       
                             <div class="analysis-row">
                                 <div class="analysis-card">
                                     <h3><i class="fas fa-car"></i> Peak Hour Volume</h3>
@@ -1012,13 +999,13 @@
                                 </div>
                             </div>
                     
-                            <!-- Row 2: Main Charts -->
+                          
                             <div class="analysis-row">
                                 <div class="analysis-card wide">
                                     <h3><i class="fas fa-chart-bar"></i> Hourly Traffic Volume</h3>
                                <div class="chart-container">
-    <canvas id="hourlyChart"></canvas>
-</div>
+                                <canvas id="hourlyChart"></canvas>
+                                    </div>
 
                                 </div>
                                 
@@ -1031,7 +1018,7 @@
                                 </div>
                             </div>
                     
-                            <!-- Row 3: Trend Analysis -->
+                      
                             <div class="analysis-row">
                                 <div class="analysis-card">
                                     <h3><i class="fas fa-calendar-alt"></i> Daily Trends</h3>
@@ -1049,21 +1036,18 @@
                         <div id="map" style="height: 100%; width: 100%;"></div>
                           </div>
 
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                      </div>
+         </div
+            </div>
+            </div>
+          </div>
+    </div>
                     </div>
                 </div>
             </div>
 
-        </div> <!-- End of analyticsContent -->
+        </div> 
 
-        <!-- ▼▼▼ ADD ANNOUNCEMENTS SECTION HERE ▼▼▼ -->
-        <!-- Announcements Content -->
         <div class="content-section" id="announcementsContent" style="display:none">
             <div class="section-header">
                 <h2><i class="fas fa-bullhorn"></i> Announcements</h2>
@@ -1102,36 +1086,30 @@
                             <div class="announcement-actions">
                                 <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
                                 <button class="action-btn delete-btn"><i class="fas fa-trash"></i> Delete</button>
-                            </div>
+                   </div>
                         </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        <!-- ▲▲▲ END OF ANNOUNCEMENTS SECTION ▲▲▲ -->
-
-    </main> <!-- Closing main tag -->
-</div> <!-- Closing dashboard-container -->
-        </main>
     </div>
+            </div>
+       </div>
+    
 
+    </main>
+</div> 
+        </main>
+ </div>
+    
     <script>
-        // Navigation Control
+ 
         document.querySelectorAll('.sidebar-nav a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                
-                // Update active state
                 document.querySelectorAll('.sidebar-nav li').forEach(item => {
                     item.classList.remove('active');
                 });
                 this.closest('li').classList.add('active');
-                
-                // Update page title
                 const pageTitle = this.querySelector('span').textContent;
                 document.getElementById('pageTitle').textContent = pageTitle;
-                
-                // Show corresponding content
                 const target = this.getAttribute('href').substring(1);
                 document.querySelectorAll('.content-section').forEach(section => {
                     section.style.display = 'none';
@@ -1153,8 +1131,6 @@
                 showToast(`Switched to ${pageTitle} view`);
             });
         });
-
-        // Signal Control Functionality
         document.querySelectorAll('.mode-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
@@ -1180,8 +1156,6 @@
                 }
             });
         });
-
-        // Signal Actions
         document.querySelectorAll('.action-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 if(this.disabled) return;
@@ -1211,7 +1185,6 @@
             });
         });
 
-        // Timing Sliders
         document.querySelectorAll('.timing-slider').forEach(slider => {
             slider.addEventListener('input', function() {
                 const value = this.value;
@@ -1223,8 +1196,7 @@
                 }
             });
         });
-
-        // Map Controls
+        
         document.getElementById('zoomIn').addEventListener('click', () => {
             showToast('Zooming in on map');
         });
@@ -1237,7 +1209,6 @@
             showToast('Refreshing map data');
         });
 
-        // Emergency Priority Buttons
         document.querySelectorAll('.priority-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const vehicleType = this.querySelector('i').className.split(' ')[1];
@@ -1255,19 +1226,19 @@
                         break;
                 }
                 
-                showToast(`Priority route activated for ${vehicleName}`);
+         showToast(`Priority route activated for ${vehicleName}`);
                 
-                // Simulate signal change for emergency vehicle
+             
                 document.querySelectorAll('.signal-card').forEach(card => {
-                    const lights = card.querySelectorAll('.light');
+             const lights = card.querySelectorAll('.light');
                     lights.forEach(light => light.classList.remove('active'));
-                    card.querySelector('.light.green').classList.add('active');
+            card.querySelector('.light.green').classList.add('active');
                     card.querySelector('.signal-timer').textContent = '60s';
-                });
+           });
             });
         });
 
-        // Incident Report Form
+
         document.querySelector('.incident-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const type = this.querySelector('.incident-type').value;
@@ -1333,58 +1304,55 @@
         }
         
         function startSignalCycle(signal) {
-            const lights = signal.querySelectorAll('.light');
-            const timer = signal.querySelector('.signal-timer');
-            const duration = parseInt(signal.querySelector('.timing-slider').value);
-            
-            // Red phase
-            lights.forEach(light => light.classList.remove('active'));
-            signal.querySelector('.light.red').classList.add('active');
-            timer.textContent = `${duration}s`;
+      const lights = signal.querySelectorAll('.light');
+    const timer = signal.querySelector('.signal-timer');
+const duration = parseInt(signal.querySelector('.timing-slider').value);
+    lights.forEach(light => light.classList.remove('active'));
+  signal.querySelector('.light.red').classList.add('active');
+      timer.textContent = `${duration}s`;
             
             setTimeout(() => {
-                // Red + Yellow phase
                 signal.querySelector('.light.yellow').classList.add('active');
                 timer.textContent = '5s';
                 
                 setTimeout(() => {
-                    // Green phase
-                    lights.forEach(light => light.classList.remove('active'));
-                    signal.querySelector('.light.green').classList.add('active');
-                    timer.textContent = `${duration}s`;
+                   
+          lights.forEach(light => light.classList.remove('active'));
+        ignal.querySelector('.light.green').classList.add('active');
+      timer.textContent = `${duration}s`;
                     
                     setTimeout(() => {
-                        // Yellow phase
-                        signal.querySelector('.light.green').classList.remove('active');
-                        signal.querySelector('.light.yellow').classList.add('active');
-                        timer.textContent = '5s';
+                 
+          signal.querySelector('.light.green').classList.remove('active');
+          signal.querySelector('.light.yellow').classList.add('active');
+                 timer.textContent = '5s';
                         
-                        // Restart cycle
-                        setTimeout(() => startSignalCycle(signal), 5000);
+                      
+                setTimeout(() => startSignalCycle(signal), 5000);
                     }, duration * 1000);
                 }, 5000);
             }, duration * 1000);
         }
         
-        // Sample alert data - in a real app, this would come from an API
+       
 const allAlerts = [
     { 
-        type: 'critical', 
-        icon: 'fa-exclamation-circle', 
-        message: 'Accident reported on Main St - Expect delays', 
-        time: '10:45 AM' 
+type: 'critical', 
+      icon: 'fa-exclamation-circle', 
+   message: 'Accident reported on Main St - Expect delays', 
+  time: '10:45 AM' 
     },
     { 
-        type: 'warning', 
-        icon: 'fa-traffic-light', 
-        message: 'Signal malfunction at 5th Avenue', 
-        time: '09:30 AM' 
+ type: 'warning', 
+ icon: 'fa-traffic-light', 
+  message: 'Signal malfunction at 5th Avenue', 
+ time: '09:30 AM' 
     },
     { 
         type: 'info', 
-        icon: 'fa-info-circle', 
-        message: 'Construction work on Highway 101 until 6PM', 
-        time: '08:15 AM' 
+ icon: 'fa-info-circle', 
+ message: 'Construction work on Highway 101 until 6PM', 
+ time: '08:15 AM' 
     },
     { 
         type: 'critical', 
@@ -1393,102 +1361,86 @@ const allAlerts = [
         time: '07:50 AM' 
     },
     { 
-        type: 'warning', 
-        icon: 'fa-road', 
-        message: 'Pothole reported on Oak Street', 
-        time: 'Yesterday' 
+    type: 'warning', 
+   icon: 'fa-road', 
+ message: 'Pothole reported on Oak Street', 
+   time: 'Yesterday' 
     }
 ];
 
-// View All Alerts button functionality
+
 document.querySelector('.view-all-btn').addEventListener('click', function() {
     // Create modal HTML
     const modalHTML = `
         <div class="alert-modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2><i class="fas fa-bell"></i> All Traffic Alerts</h2>
+    <div class="modal-content">
+         <div class="modal-header">
+    <h2><i class="fas fa-bell"></i> All Traffic Alerts</h2>
                     <button class="close-modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    ${allAlerts.map(alert => `
-                        <div class="alert-item ${alert.type}">
-                            <i class="fas ${alert.icon}"></i>
-                            <div class="alert-details">
-                                <span class="alert-message">${alert.message}</span>
-                                <span class="alert-time">${alert.time}</span>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-                <div class="modal-footer">
-                    <button class="dismiss-all-btn">
-                        <i class="fas fa-check-circle"></i> Dismiss All
-                    </button>
-                </div>
-            </div>
+  <div class="modal-body">
+   ${allAlerts.map(alert => `
+ <div class="alert-item ${alert.type}">
+<i class="fas ${alert.icon}"></i>
+ <div class="alert-details">
+      <span class="alert-message">${alert.message}</span>
+    <span class="alert-time">${alert.time}</span>
+     </div>
+   </div>
+`).join('')}
+    </div>
+         <div class="modal-footer">
+      <button class="dismiss-all-btn">
+<i class="fas fa-check-circle"></i> Dismiss All
+         </button>
+        </div>
+    </div>
         </div>
     `;
-    
-    // Add modal to DOM
+
     document.body.insertAdjacentHTML('beforeend', modalHTML);
-    
-    // Close modal functionality
     document.querySelector('.close-modal').addEventListener('click', closeModal);
-    
-    // Dismiss all alerts functionality
+
     document.querySelector('.dismiss-all-btn').addEventListener('click', function() {
         showToast('All alerts dismissed');
         closeModal();
     });
-    
-    // Close modal when clicking outside content
     document.querySelector('.alert-modal').addEventListener('click', function(e) {
         if (e.target === this) {
-            closeModal();
-        }
+   }
     });
 });
 
 document.querySelector('.view-all-btn').addEventListener('click', function() {
-    // ... [previous modal creation code] ...
-    
-    // Add modal to DOM
     document.body.insertAdjacentHTML('beforeend', modalHTML);
-    
-    // Trigger animation
     setTimeout(() => {
         document.querySelector('.alert-modal').classList.add('show');
     }, 10);
-    
-    // ... [rest of the code] ...
 });
 
 function closeModal() {
     document.querySelector('.alert-modal').remove();
 }
-        
-        // Initialize signal sequences
         setupSignalSequence();
 
         document.querySelector('.view-all-btn').addEventListener('click', function () {
     const modalHTML = `
-        <div class="alert-modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2><i class="fas fa-bell"></i> All Traffic Alerts</h2>
-                    <button class="close-modal">&times;</button>
+ <div class="alert-modal">
+  <div class="modal-content">
+ <div class="modal-header">
+   <h2><i class="fas fa-bell"></i> All Traffic Alerts</h2>
+    <button class="close-modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    ${allAlerts.map(alert => `
-                        <div class="alert-item ${alert.type}">
-                            <i class="fas ${alert.icon}"></i>
+   <div class="modal-body">
+    ${allAlerts.map(alert => `
+        <div class="alert-item ${alert.type}">
+     <i class="fas ${alert.icon}"></i>
                             <div class="alert-details">
-                                <span class="alert-message">${alert.message}</span>
-                                <span class="alert-time">${alert.time}</span>
-                            </div>
-                        </div>
-                    `).join('')}
+        <span class="alert-message">${alert.message}</span>
+    <span class="alert-time">${alert.time}</span>
+   </div>
+  </div>
+   `).join('')}
                 </div>
                 <div class="modal-footer">
                     <button class="dismiss-all-btn">
@@ -1498,15 +1450,12 @@ function closeModal() {
             </div>
         </div>
     `;
-
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
-    // Trigger animation
+   
     setTimeout(() => {
         document.querySelector('.alert-modal').classList.add('show');
     }, 10);
-
-    // Close and dismiss logic
     document.querySelector('.close-modal').addEventListener('click', closeModal);
     document.querySelector('.dismiss-all-btn').addEventListener('click', function () {
         showToast('All alerts dismissed');
@@ -1521,11 +1470,8 @@ function closeModal() {
 function closeModal() {
     const modal = document.querySelector('.alert-modal');
     if (modal) modal.remove();
-}
 
     </script>
-
-    <!-- Leaflet and Geocoder -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -1555,8 +1501,6 @@ function closeModal() {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(hotspotMap);
-
-    // Example congestion data: [lat, lng, intensity]
     const congestionData = [
         [9.030, 38.740, 0.9],
         [9.031, 38.742, 0.6],
@@ -1568,7 +1512,7 @@ function closeModal() {
     const heat = L.heatLayer(congestionData, { radius: 25 }).addTo(hotspotMap);
 </script>
 <script>
-    // VEHICLE DISTRIBUTION CHART
+    
     new Chart(document.getElementById('vehicleChart'), {
         type: 'pie',
         data: {
@@ -1580,31 +1524,29 @@ function closeModal() {
             }]
         }
     });
-
-    // HOURLY TRAFFIC VOLUME CHART
     new Chart(document.getElementById('hourlyChart'), {
         type: 'bar',
         data: {
-            labels: ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM'],
-            datasets: [{
-                label: 'Vehicles per Hour',
-                data: [200, 350, 500, 430, 300, 220],
-                backgroundColor: '#3498db'
+       labels: ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM'],
+  datasets: [{
+       label: 'Vehicles per Hour',
+         data: [200, 350, 500, 430, 300, 220],
+  backgroundColor: '#3498db'
             }]
         }
     });
 
-    // DAILY TREND CHART
+
     new Chart(document.getElementById('dailyChart'), {
         type: 'line',
         data: {
             labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
             datasets: [{
-                label: 'Daily Traffic Volume',
-                data: [1500, 1600, 1700, 1650, 1800, 1200, 1100],
-                borderColor: '#2ecc71',
-                borderWidth: 2,
-                fill: false
+label: 'Daily Traffic Volume',
+   data: [1500, 1600, 1700, 1650, 1800, 1200, 1100],
+      borderColor: '#2ecc71',
+      borderWidth: 2,
+    fill: false
             }]
         }
     });
@@ -1624,17 +1566,17 @@ function closeModal() {
                     borderWidth: 1
                 }]
             },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom'
+   options: {
+  responsive: true,
+  plugins: {
+      legend: {
+     position: 'bottom'
                     }
                 }
             }
         });
     } else {
-        console.warn('vehicleChart canvas not found!');
+console.warn('vehicleChart canvas not found!');
     }
 </script>
 
